@@ -21,46 +21,11 @@ nav i{
     color: #fb8b9b;
     font-size: 2em;
 }
-nav i:hover{
-    color: #213e4e;
-}
 nav h2{
     color: #213e4e;
     font-size: 2em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
-}
-.share {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-nav h2:hover{
-    color: #fb8b9b;
-}
-/* Grande image header */
-.back{
-    background-image: url(img/background.jpg);
-    height: 40em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.textback{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.textback h1{
-    font-size: 3em;
-    font-family: Candal;
-}
-.textback p{
-    font-size: 2em;
-    text-align: center;
-    font-family: open sans;
-    margin: 2em;
 }
 .searchbar{
     width: 100%;
@@ -82,42 +47,30 @@ input {
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
-::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
+
 /* main */
 main {
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding-top: 2em ;
     margin: auto;
-    padding-top: 2em;
 }
 main h2 {
     display: flex;
     justify-content: center;
     padding: 1em 0 1em 0;
-    font-family: Candal;
+    font-family:Candal ;
     font-size: 1.8em;
     color: #213e4e;
     border-top: dashed black 1px;
     border-right: dashed black 1px;
     border-left: dashed black 1px;
 }
-main h3 {
-    font-size: 1.2em;
-    color: #fb8b9b;
-    margin:0;
-    padding: 0.5em;
-}
-main p {
-    color: gray;
-    margin: 0.6em;
-}
 .dadBlock {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
     margin-bottom: 2em;
 }
 .block {
@@ -126,13 +79,30 @@ main p {
 .babyBlock {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1em;
+    width: 32%;
+}
+.babyBlock i, .babyBlock address{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 2em 0;
+    width: 100%;
+}
+.babyBlock p {
+    display: flex;
+    text-align: center;
     align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 2em 0 2em 0;
+    width: 100%;
+    line-height: 1.4;
 }
 .babyBlock i {
-    padding-top: 20px;
-    font-size: 2em;
-}
-
+    border-bottom: dashed black 1px;
+ }
 
 /* Footer */
 footer {
@@ -144,13 +114,11 @@ footer {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 8em;
-
 }
 footer div {
     display: flex;
     width: 80%;
     justify-content: space-between;
-
 }
 footer div a {
     text-decoration: none;
