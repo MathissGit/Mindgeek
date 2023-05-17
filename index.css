@@ -78,6 +78,11 @@ a h2:hover {
     flex-direction: column;
     align-items: center;
 }
+@media (max-width: 960px) {
+	.back{
+		margin-top: -40px;
+	}
+}
 .textback h1{
     font-size: 3em;
     font-family: Candal;

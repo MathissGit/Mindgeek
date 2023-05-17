@@ -85,6 +85,12 @@ input {
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 960px) {
+	.searchbar{
+		flex-direction: column;
+        margin-top: -40px;
+	}
+} 
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -129,7 +135,6 @@ main h2 {
 @media (max-width: 960px) {
     .babyBlock{ width: 90%};
 }
-
 .babyBlock i, .babyBlock address{
     display: flex;
     justify-content: center;

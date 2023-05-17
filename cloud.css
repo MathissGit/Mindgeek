@@ -85,6 +85,12 @@ input {
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 960px) {
+	.searchbar{
+		flex-direction: column;
+        margin-top: -40px;
+	}
+} 
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -120,6 +126,12 @@ main p {
     justify-content: space-evenly;
     margin-bottom: 2em;
 }
+@media (max-width: 960px) {
+	.dadBlock{
+		flex-direction: column;
+        align-items: center;
+	}
+}
 .babyBlock {
     display: flex;
     flex-direction: column;
@@ -130,6 +142,9 @@ main p {
     border: dashed black 1px;
     padding: 0.6em;
     color: #213e4e;
+}
+@media (max-width: 960px) {
+    .babyBlock{ width: 90%};
 }
 .babyBlock .tittleBlock {
     font-family: open sans;
