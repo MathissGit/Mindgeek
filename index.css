@@ -24,7 +24,7 @@ nav i{
 i:hover {
     color: #213e4e;
 }
-h2:hover {
+nav h2:hover {
     color: #fb8a9b;
 }
 nav h2{
