@@ -1,11 +1,9 @@
 
-
 /* header */
 header{
     display: flex;
     flex-direction: column;
 }
-
 nav{
     display: flex;
     flex-direction: row;
@@ -24,7 +22,15 @@ nav i{
 nav h2{
     color: #213e4e;
     font-size: 2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
+.share {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Grande image header */
 .back{
     background-image: url(img/background.jpg);
     width: 100%;
