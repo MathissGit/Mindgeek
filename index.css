@@ -103,8 +103,9 @@ main h3 {
     padding: 0.5em;
 }
 main p {
+    font-family: open sans;
     color: gray;
-    margin: 0.6em;
+    margin: 1em;
 }
 .dadBlock {
     display: flex;
