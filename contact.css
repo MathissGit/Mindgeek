@@ -83,7 +83,7 @@ main h2 {
     justify-content: center;
     align-content: center;
     margin-bottom: 1em;
-    width: 32%;
+    width: 30%;
 }
 .babyBlock i, .babyBlock address{
     display: flex;

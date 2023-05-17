@@ -109,7 +109,9 @@ main p {
     display: flex;
     justify-content: center;
 }
-.babyBlock button {
+.babyBlock a {
+    display: flex;
+    justify-content: center;
     background-color: #fb8a9b;
     color: white;
     border: none;
