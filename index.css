@@ -21,6 +21,9 @@ nav i{
     color: #fb8b9b;
     font-size: 2em;
 }
+nav i:hover{
+    color: #213e4e;
+}
 nav h2{
     color: #213e4e;
     font-size: 2em;
@@ -32,6 +35,25 @@ nav h2{
     flex-direction: column;
     justify-content: center;
 }
+nav h2:hover{
+    color: #fb8b9b;
+}
+@media (max-width: 960px) {
+	nav{
+		flex-direction: column;
+	}
+}
+@media (max-width: 960px) {
+	.logo{
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 960px) {
+	.share{
+		padding: 10px;
+	}
+}
+
 /* Grande image header */
 .back{
     background-image: url(img/background.jpg);
@@ -49,12 +71,18 @@ nav h2{
 .textback h1{
     font-size: 3em;
     font-family: Candal;
+    text-align: center;
 }
 .textback p{
     font-size: 2em;
     text-align: center;
     font-family: open sans;
     margin: 2em;
+}
+@media (max-width: 960px) {
+	.textback{
+		flex-direction: column;
+	}
 }
 .searchbar{
     width: 100%;
@@ -76,12 +104,20 @@ input {
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
-
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+@media (max-width: 960px) {
+	.searchbar{
+		flex-direction: column;
+	}
+}  
 /* main */
 main {
     display: flex;
     flex-direction: column;
     width: 80%;
+    padding-top: 2em ;
     margin: auto;
     padding-top: 2em;
 }
@@ -112,6 +148,11 @@ main p {
     flex-direction: column;
     margin-bottom: 2em;
 }
+/*@media (max-width: 960px) {
+	.dadBlock{
+		flex-direction: column;
+	}
+}*/
 .block {
     display: flex;
 }
@@ -124,7 +165,12 @@ main p {
     padding-top: 20px;
     font-size: 2em;
 }
-
+@media (max-width: 960px) {
+	.block{
+        display: flex;
+		flex-direction: column;
+	}
+}
 
 /* Footer */
 footer {
@@ -147,4 +193,16 @@ footer div {
 footer div a {
     text-decoration: none;
     color: white;
+}
+@media (max-width: 960px) {
+	footer div{
+		flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+	}
+}
+@media (max-width: 960px) {
+	footer div a{
+		padding: 20px;
+	}
 }
