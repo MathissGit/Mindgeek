@@ -45,7 +45,7 @@ nav h2:hover{
 }
 @media (max-width: 960px) {
 	.logo{
-		padding: 10px;
+		padding-bottom: 20px;
 	}
 }
 @media (max-width: 960px) {

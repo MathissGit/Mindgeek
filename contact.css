@@ -34,7 +34,7 @@ nav h2{
 }
 @media (max-width: 960px) {
 	.logo{
-		padding: 10px;
+		padding-top: 20px;
 	}
 }
 @media (max-width: 960px) {
@@ -101,14 +101,27 @@ main h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-bottom: 1em;
-    width: 32%;
+    margin: 1em;
+    width: 100%;
 }
+@media (max-width: 960px) {
+    .babyBlock{ width: 90%};
+}
+
 .babyBlock i, .babyBlock address{
     display: flex;
     justify-content: center;
-    padding: 2em 0 2em 0;
+    padding: 2em 0 0.5em 0;
     width: 100%;
+}
+address a{
+    color: #fb8a9b;
+    text-decoration: none;
+    font-style: normal;
+}
+span{
+    text-decoration:underline dotted;
+    font-style: normal;
 }
 .babyBlock p {
     display: flex;
@@ -119,11 +132,17 @@ main h2 {
     padding: 2em 0 2em 0;
     width: 100%;
     line-height: 1.4;
+    font-style: italic;
 }
 .babyBlock i {
-    border-bottom: dashed black 1px;
+    border-bottom: dashed #fb8a9b 1px;
  }
-
+ @media (max-width: 960px) {
+	.dadBlock{
+		flex-direction: column;
+        align-items: center;
+	}
+}
 /* Footer */
 footer {
     display: flex;
