@@ -14,12 +14,18 @@ nav{
     padding-top: 2em;
     padding-bottom: 2em;
 }
-nav li{
-    list-style: none;
+a {
+    text-decoration: none;
 }
 nav i{
     color: #fb8b9b;
     font-size: 2em;
+}
+i:hover {
+    color: #213e4e;
+}
+h2:hover {
+    color: #fb8a9b;
 }
 nav h2{
     color: #213e4e;
@@ -27,6 +33,38 @@ nav h2{
     margin-top: 0.3em;
     margin-bottom: 0.3em;
 }
+.share {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.share a i:hover {
+    color: #213e4e;
+}
+.share a i:hover + h2 {
+    color: #fb8a9b;
+}
+a h2:hover {
+    color: #fb8a9b;
+}
+
+@media (max-width: 960px) {
+	nav{
+		flex-direction: column;
+	}
+}
+@media (max-width: 960px) {
+	.logo{
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 960px) {
+	.share{
+		padding: 10px;
+	}
+}
+
+/* Barre de recherche */
 .searchbar{
     width: 100%;
     height: 2em;
@@ -43,6 +81,9 @@ input {
     height: 2em;
     border: none;
     outline: none;
+}
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
@@ -129,13 +170,27 @@ footer {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 8em;
+
 }
 footer div {
     display: flex;
     width: 80%;
     justify-content: space-between;
+
 }
 footer div a {
     text-decoration: none;
     color: white;
+}
+@media (max-width: 960px) {
+	footer div{
+		flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+	}
+}
+@media (max-width: 960px) {
+	footer div a{
+		padding: 20px;
+	}
 }
